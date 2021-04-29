@@ -1,4 +1,4 @@
-day_result = float(input("Введите количество начальное количество: "))
+day_result = float(input("Введите количество начальное количество километров: "))
 goal_result = float(input("Введите желаемое количество километров: "))
 days = 1
 while goal_result > day_result:
