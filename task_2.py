@@ -1,5 +1,4 @@
 user_list = list(input('Введите список элементов: ').split())
-print(user_list)
 count = 1
 for i in range(0, len(user_list), 2):
     if count == len(user_list):
