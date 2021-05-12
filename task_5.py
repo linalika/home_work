@@ -7,7 +7,7 @@ def get_sum(*args):
 
 
 while True:
-    user_string = list(map(int, input('Введите строку чисел, разделённых пробелом. ').split()))
+    user_string = map(int, input('Введите строку чисел, разделённых пробелом. ').split())
     if input('Для выхода из приложения нажмите Q, для продолжения Enter: ').upper() == 'Q':
         result += get_sum(*user_string)
         print(f'Сумма чисел {result}')
