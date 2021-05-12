@@ -1,10 +1,12 @@
-def get_title_words(user_string):
+# Решение для 6 и 7 заданий
+
+def int_func(user_string):
     return user_string.title()
 
 
 def main():
     user_string = input('Введите слова: ')
-    result = get_title_words(user_string)
+    result = int_func(user_string)
     print(result)
 
 

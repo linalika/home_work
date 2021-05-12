@@ -12,7 +12,7 @@ def main():
     num_2 = 9
     num_3 = 0
     result = my_func(num_1, num_2, num_3)
-    print(result)
+    print(f'Сумма минимального и мксимального числа {result}')
 
 
 main()
