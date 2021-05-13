@@ -9,7 +9,8 @@ def main():
     user_city = input('Введите город проживаня: ')
     user_email = input('Введите email: ')
     user_phone = input('Введите телефон: ')
-    result = input_data(user_name, user_surname, user_year, user_city, user_email, user_phone)
+    result = input_data(name=user_name, surname=user_surname, year=user_year, city=user_city, email=user_email,
+                        telephone=user_phone)
     print(f'{result}')
 
 
