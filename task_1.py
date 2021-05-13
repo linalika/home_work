@@ -1,13 +1,10 @@
 def div(dividend, divider):
-    if dividend.isdigit() and divider.isdigit():
-        dividend = float(dividend)
-        divider = float(divider)
-        try:
-            result = round(dividend / divider, 2)
-        except ArithmeticError:
-            result = 'Ошибка, деление на ноль!'
-    else:
-        result = 'Вы ввели не число'
+    try:
+        result = round(float(dividend) / float(divider), 2)
+    except ValueError:
+        result = 'Введены неверные данные'
+    except ArithmeticError:
+        result = 'Ошибка, деление на ноль!'
     return result
 
 
