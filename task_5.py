@@ -1,6 +1,12 @@
-from random import randint
+user_string = input('Введите строку чисел, разделённых пробелом. ')
+result = 0
+with open('task_5.txt', 'r+') as f:
+    f.writelines(user_string)
+    numbers = f.readline()
 
-numbers = [str(randint(-10, 10)) for _ in range(10)]
-numbers_str = ' '.join(numbers)
-with open('task_5.txt', 'w+') as f:
-    f.write(numbers_str)
+for i in numbers:
+    try:
+        result += int(i)
+    except ValueError:
+        "Неверный формат жанных"
+print(result)

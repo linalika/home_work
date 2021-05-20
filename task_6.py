@@ -1,12 +1,10 @@
-user_string = input('Введите строку чисел, разделённых пробелом. ')
-result = 0
-with open('task_5.txt', 'r+') as f:
-    f.writelines(user_string)
-    numbers = f.readline()
+subjects = {}
 
-for i in numbers:
-    try:
-        result += int(i)
-    except ValueError:
-        "Неверный формат жанных"
-print(result)
+with open('task_6.txt', 'r') as f:
+    for line in f.readlines():
+        data = line.replace('(', ' ').split()
+        subjects[data[0]] = sum(
+            int(i) for i in data if i.isdigit()
+        )
+
+print(subjects)
