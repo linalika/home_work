@@ -7,6 +7,9 @@ class Clothes(ABC):
     def sum(self):
         pass
 
+    def __add__(self, other):
+        return self.sum + other.sum
+
 
 class Coat(Clothes):
     def __init__(self, size):
